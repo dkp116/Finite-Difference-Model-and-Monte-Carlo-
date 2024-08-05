@@ -23,11 +23,15 @@ double AsianCon::EstimationZ(BSModel Model) //This gives esitmation of stock pri
    return Model.S0 * exp(m+s*Gauss());
 }
 
-double AsianCallCon::Payoff(SamplePath& S, BSModel Model)   
+double AsianCallCon::Payoff(SamplePath& S, BSModel Model)   // This should be irrelevant 
 {
+  // double stockprice = 0;
+  // for ( int i = 0; i < 10000;i++)
+  // {stockprice = (i*stockprice + EstimationZ(Model))/(i+1.0);}
   double stockprice = 0;
-  for ( int i = 0; i < 1000;i++)
-  {stockprice = (i*stockprice + EstimationZ(Model))/(i+1.0);}
+  int size = S.size();
+  for(int k = 0; k< size ; k++){stockprice = k * stockprice + S[k] / (k + 1.0);}
+
   if (stockprice > K){return stockprice - K;}
   else {return 0.0;} 
 }

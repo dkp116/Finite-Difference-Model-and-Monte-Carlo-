@@ -48,7 +48,7 @@ double PathDepOption::PriceByVarRedMC
 }
 
 
-double AsianCall::Payoff(SamplePath& S, BSModel Model) // this pay off needs to change to coursework one
+double AsianCall::Payoff(SamplePath& S, BSModel Model) // 
 {
    double Ave=0.0;
    for (int k=0; k<m; k++) Ave=(k*Ave+S[k])/(k+1.0);
