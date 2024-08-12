@@ -38,8 +38,9 @@ int main()
 
    int m=1000;
    AsianPut Option(T,K,m);
+   AsianPut Option1(T,K,m);
    AsianPutCon  CVOption(T,K,m);
-   long N=10000;
+   long N=1000;
 
    Option.PriceByMC(Model,N,0.0001);  
    cout << "Price by direct MC = " << Option.Price << endl
@@ -50,6 +51,8 @@ int main()
    Option.PriceByVarRedMC(Model,N,CVOption);
    cout << "Price using Control = " << Option.Price << endl
         << "Error = " << Option.PricingError << endl; 
+
+     
 
 
    return 0; 
