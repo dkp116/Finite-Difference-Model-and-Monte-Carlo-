@@ -4,10 +4,11 @@ This project implements an option pricing simulator using various financial mode
 
 ## Table of Contents
 - [Installation](#installation)
-- [Asian Option Pricing](#Asian_Option_Pricing)
-- [American Vanilla Option Pricing](#American_Vanilla_Option_Pricing)
-- [European Vanilla Option Pricing](#European_Vanilla_Option_Pricing)
+- [Asian Option Pricing](#asian-option-pricing)
+- [American Vanilla Option Pricing](#american-vanilla-option-pricing)
+- [European Vanilla Option Pricing](#european-vanilla-option-pricing)
 - [License](#license)
+
 
 ## Installation
 
