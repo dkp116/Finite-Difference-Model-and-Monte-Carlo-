@@ -99,7 +99,7 @@ The code snippet above demonstrates how to price a European vanilla option using
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.txt) file for more details.
 
 
 
