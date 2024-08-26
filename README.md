@@ -15,5 +15,21 @@ To use this project, you need to have a C++ compiler installed on your machine. 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/dkp116/
+   git clone https://github.com/dkp116/Finite-Difference-Model-and-Monte-Carlo-.git
+
+
+## Usage
+
+For Pricing Asian Options in the main.cpp file initialise the BSM Mode with 
+```cpp
+  double S0=100.0, r=0.08, sigma= 0.3;
+     BSModel Model(S0,r,sigma);                   //Constructor for our Model 
+     double T =1.0/12.0;
+     double K=102.0;
+int m=1000;
+   AsianPut Option(T,K,m);
+   AsianPut Option1(T,K,m);
+   AsianPutCon  CVOption(T,K,m);
+   long N=1000;
+
 
