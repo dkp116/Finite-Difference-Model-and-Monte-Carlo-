@@ -30,9 +30,9 @@ class DifferenceOfOptions: public PathDepOption
       DifferenceOfOptions(double T_, int m_,
                           PathDepOption* Ptr1_,
                           PathDepOption* Ptr2_)
-         {T=T_; m=m_; Ptr1=Ptr1_; Ptr2=Ptr2_;}
+         {T=T_; m=m_; Ptr1=Ptr1_; Ptr2=Ptr2_;}  //Constructor 
       double Payoff(SamplePath& S, BSModel Model)
-         {return Ptr1->Payoff(S, Model)-Ptr2->Payoff(S, Model);}  //Check this formula
+         {return Ptr1->Payoff(S, Model)-Ptr2->Payoff(S, Model);}  //Correct formula 
 };
 
 

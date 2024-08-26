@@ -52,7 +52,9 @@ int main()
    cout << "Price using Control = " << Option.Price << endl
         << "Error = " << Option.PricingError << endl; 
 
-     
+     //Extention with the code
+     //Include better pricing with grid and include more options
+     //Make a python wrap so accessible using python 
 
 
    return 0; 
