@@ -96,5 +96,10 @@ cout << " x : " << BaSPut.Getx() << " y: "<< BaSPut.Gety() << endl;
 ```
 The code snippet above demonstrates how to price a European vanilla option using the explicit formula derived from the Black-Scholes PDE.
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+
 
 
